@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/register_exit_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/exit_btn_pic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_bold"
+            android:text="注册"
+            android:textColor="@color/Grey900"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="欢迎加入口袋健康，享受健康'轻'生活"
+            android:textColor="@color/Grey500"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/input_windows_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/register_user_pic" />
+
+        <EditText
+            android:id="@+id/register_edUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imageView1"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center_vertical"
+            android:hint="Your Name"
+            android:inputType="text"
+            android:textColor="@color/Grey400"
+            android:textSize="16sp"
+            tools:ignore="TextViewEdits" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_windows_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout4"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/email_pic" />
+
+        <EditText
+            android:id="@+id/register_edEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center_vertical"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/Grey400"
+            android:textSize="16sp"
+            tools:ignore="TextViewEdits" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_windows_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout5"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/password_pic" />
+
+        <EditText
+            android:id="@+id/register_edPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center_vertical"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:textColor="@color/Grey400"
+            android:textSize="16sp"
+            tools:ignore="TextViewEdits" />
+
+        <ImageView
+            android:id="@+id/register_imageViewEye"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/login_eye_pic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/input_windows_back"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout6"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">
+
+        <EditText
+            android:id="@+id/ed_Code"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:textColor="@color/Grey400"
+            android:textSize="16sp"
+            tools:ignore="TextViewEdits" />
+
+        <Button
+            android:id="@+id/Get_codeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ed_Code"
+            android:layout_alignParentTop="@+id/ed_Code"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="获取验证码"
+            android:background="@drawable/button_default_small"
+            android:layout_toEndOf="@+id/ed_Code" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="327dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/button_default_large"
+        android:fontFamily="@font/manrope_bold"
+        android:text="注册"
+        android:textColor="@color/Grey900"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout7"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="327dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/signUpBtn"
+        app:layout_constraintStart_toStartOf="@+id/signUpBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signUpBtn">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@drawable/line_view" />
+
+        <TextView
+            android:layout_width="95dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/manrope_regular"
+            android:text="其他登录方式"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@drawable/line_view" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="215dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/register_by_wechat"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="17.75dp"
+            android:background="@drawable/login_other_style"
+            android:src="@drawable/login_wechat_pic" />
+
+        <ImageView
+            android:id="@+id/register_by_mobile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="17.75dp"
+            android:background="@drawable/login_other_style"
+            android:src="@drawable/login_mobile_pic" />
+
+        <ImageView
+            android:id="@+id/register_by_qq"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="17.75dp"
+            android:background="@drawable/login_other_style"
+            android:src="@drawable/login_qq_pic" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/register_sign_in"
+        android:layout_width="240dp"
+        android:layout_height="26dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="4sp"
+        android:text="已经注册？请登录"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+        android:fontFamily="@font/manrope_bold"
+        android:textSize="16sp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
